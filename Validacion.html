@@ -1,0 +1,88 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="js/Validacion.js"> </script>
+
+    
+</head>
+<body>
+<h1>Formulario inscripcion tarjeta credito</h1>
+<hr>
+<form onsubmit="Validar_Todo()">
+<table>
+
+<tr>
+<td> <strong>Nombre:</strong> </td>  
+<td>
+<input type="text" name="nombre" id="nombre" placeholder="Intoduce Nombre">    
+</td>  
+</tr>
+
+<tr>
+<td> <strong>Apellido:</strong></td>  
+<td>
+<input type="text" name="apellido" id="apellido" placeholder="Intoduce Apellido">    
+</td>  
+</tr>
+
+<tr>
+<td> <strong>Cedula:</strong></td>  
+<td>
+<input type="text" name="cedula" id="cedula" placeholder="Intoduce la cedula" maxlength="13">    
+</td>  
+</tr>
+
+<tr>
+<td> <strong>Telefono:</strong></td>  
+<td>
+<input type="text" name="telefono" id="telefono" placeholder="Introduce el telefono" maxlength="12"/>
+</td> 
+</tr>
+
+<tr>
+<td> <strong>Tarjeta de credito:</strong> </td>  
+<td>
+<input type="text" name="tarjeta" id="tarjeta" placeholder="Introduce el numero tarjeta" maxlength="16"/>
+</td> 
+</tr>
+        
+
+<tr>
+<td> <strong>Fecha de nacimiento:</strong> </td>
+<td>
+<input type="text" name="dia" size="2" id="dia" placeholder="dia"/>
+<input type="text" name="mes" size="2" id="mes" placeholder="mes"/>
+<input type="text" name="ano" id="ano" size="4" placeholder="a#o"/>   
+</td>   
+</tr>
+
+<tr>
+<td> <strong>Sexo:</strong>  </td>  
+<td>
+<input type="radio" name="sexo" value="H" checked/> Hombre
+<input type="radio" name="sexo" value="M" /> Mujer
+</td> 
+</tr>
+
+<tr>
+<td> <strong>Mayor de 18:</strong> </td>
+<td>
+<input type="checkbox" name="mayor" id="mayor" checked/>
+</td>
+</tr>
+</table>
+
+<hr>
+
+<p>
+<input type="submit" value="Enviar" id="enviar"/>
+<input type="reset" value="Borrar" id="borrar" />
+</p>    
+</form>
+    
+</body>
+</html>
